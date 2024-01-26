@@ -44,10 +44,12 @@ export default function App() {
     }
   }
 
+  //function to send notification
+
   const sendNotification = async () => {
     await Notifications.scheduleNotificationAsync({
       content: {
-        title: "CSE LAB 2024 React Notification",
+        title: "CSE LAB 2024 Notification",
         body: "This is a notification from the app!",
       },
       trigger: { seconds: 2 },
@@ -62,7 +64,7 @@ export default function App() {
         }}
         style={{
           backgroundColor: "#E83D66",
-          padding: 2,
+          padding: 3,
           borderRadius: 8,
           alignItems: "center",
           justifyContent: "center",
